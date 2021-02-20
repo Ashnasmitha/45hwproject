@@ -1,7 +1,7 @@
 var road1,road2,road3,road4,bgImg,path1,path2,boy,boyImg,boy2,shop,shopImg,potionImage,potionsGroup;
 
 function preload(){
-  bgImg=loadImage("way.webp");
+  bgImg=loadImage("road.jpg");
 
   boyImg=loadAnimation("Runner-1.png","Runner-2.png");
   boy2=loadAnimation("Runner-1.png");
