@@ -6,7 +6,7 @@ function preload(){
   boyImg=loadAnimation("Runner-1.png","Runner-2.png");
   boy2=loadAnimation("Runner-1.png");
 
-  shopImg=loadAnimation("Shop.png");
+  shopImg=loadImage("Shop.png");
 
   potionImage=loadImage("potion.png");
 }
@@ -16,24 +16,29 @@ function setup() {
 
   road1=createSprite(320,162.5,10,10);
   road1.addImage(bgImg);
+  road1.scale=2.5
   road2=createSprite(960,162.5,10,10);
   road2.addImage(bgImg);
+  road2.scale=2.5
   road3=createSprite(320,500,10,10);
   road3.addImage(bgImg);
+  road3.scale=2.5
   road4=createSprite(960,500,10,10);
   road4.addImage(bgImg);
+  road4.scale=2.5
 
-  path1=createSprite(640,38.5,1280,75);
+  path1=createSprite(640,52,1280,90);
   path1.shapeColor="saddlebrown";
   path2=createSprite(640,625,1280,50);
   path2.shapeColor="saddlebrown";
 
   boy = createSprite(640,620,20,20);
   boy.addAnimation("Running",boy2);
-  boy.scale=0.08;
+  boy.scale=0.07;
 
   shop=createSprite(640,38.5,1280,75);
   shop.addImage(shopImg);
+  shop.scale=0.3;
 
   potionsGroup = new Group();
 }
